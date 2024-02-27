@@ -13,9 +13,9 @@ void Product::SetSecond(double value)
 	second = value;
 }
 
-bool Product::Init(unsigned int x, double y)
+bool Product::Init(int x, double y)
 {
-	if (x >= 0 || y >= 0)
+	if (x >= 0 && y >= 0)
 	{
 		first = x;
 		second = y;

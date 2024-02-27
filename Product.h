@@ -12,7 +12,7 @@ public:
 	void SetFirst(unsigned int value);
 	void SetSecond(double value);
 
-	bool Init(unsigned int x, double y);
+	bool Init(int x, double y);
 	void Read();
 	void Display() const;
 	

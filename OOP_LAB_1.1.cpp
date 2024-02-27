@@ -3,7 +3,7 @@
 
 using namespace std;
 
-Product makeProduct(unsigned int first, double second)
+Product makeProduct(int first, double second)
 {
 	Product p;
 	if (!p.Init(first, second))
@@ -11,10 +11,17 @@ Product makeProduct(unsigned int first, double second)
 		cout << "Incorrect value. Try again." << endl;
 	}
 	return p;
+	
 }
 
 int main()
 {
+	Product k;
+	k.Read();
+	k.Display();
+	k.Power();
+
+
 	Product p;
 	int a;
 	double b;
